@@ -5,13 +5,21 @@ import (
 	"github.com/nanozuki/akko/typ"
 )
 
+type Path struct {
+	url string
+}
+
+type Route struct {
+	method Method
+}
+
 type PathBuilder struct {
 	path string
 	item *openapi3.PathItem
 	ms   []Middleware
 }
 
-func Path(path string) *PathBuilder {
+func PPath(path string) *PathBuilder {
 	return &PathBuilder{
 		path: path,
 		item: &openapi3.PathItem{},

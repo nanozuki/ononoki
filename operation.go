@@ -42,7 +42,7 @@ func (b *OperationBuilder) Parameter(parameters ...typ.ParameterPropBuilder) *Op
 	// return b
 }
 
-func (b *OperationBuilder) Request(props ...typ.ModelPropBuilder) *OperationBuilder {
+func (b *OperationBuilder) Request(props ...typ.ParameterPropBuilder) *OperationBuilder {
 	panic("not implemented")
 	// return b
 }
